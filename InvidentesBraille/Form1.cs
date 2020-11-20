@@ -63,26 +63,31 @@ namespace InvidentesBraille
                 { 'y', '⠽' },
                 { 'z', '⠵' },
                 { 'A', '⠁' },
+                { 'Á', '⠁' },
                 { 'B', '⠃' },
                 { 'C', '⠉' },
                 { 'D', '⠙' },
                 { 'E', '⠑' },
+                { 'É', '⠑' },
                 { 'F', '⠋' },
                 { 'G', '⠛' },
                 { 'H', '⠓' },
                 { 'I', '⠊' },
+                { 'Í', '⠊' },
                 { 'J', '⠚' },
                 { 'K', '⠅' },
                 { 'L', '⠇' },
                 { 'M', '⠍' },
                 { 'N', '⠝' },
                 { 'O', '⠕' },
+                { 'Ó', '⠕' },
                 { 'P', '⠏' },
                 { 'Q', '⠟' },
                 { 'R', '⠗' },
                 { 'S', '⠎' },
                 { 'T', '⠞' },
                 { 'U', '⠥' },
+                { 'Ú', '⠥' },
                 { 'V', '⠧' },
                 { 'W', '⠺' },
                 { 'X', '⠭' },
@@ -144,7 +149,7 @@ namespace InvidentesBraille
                             using (var page = engine.Process(img))
                             {
                                 var text = page.GetText().TrimEnd();
-                                for(int i = 0; i < 74; i++)
+                                for(int i = 0; i < 79; i++)
                                 {
                                     Console.WriteLine("indice de foreach: "+ i);
                                     Console.WriteLine("valor: " + braille2D[i, 0]);
